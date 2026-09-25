@@ -11,7 +11,7 @@ export async function POST(req: Request) {
   });
 
   const result = streamText({
-    model: google('gemini-1.5-flash'),
+    model: google('gemini-3.8-flash'),
     system: "Your name is Rubel Ai. You are a helpful and friendly AI assistant.",
     messages: await convertToModelMessages(messages),
   });
